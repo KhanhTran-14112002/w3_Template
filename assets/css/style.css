@@ -1,0 +1,456 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+/* giải quyết vấn đề fload thẻ cha k bao đc thẻ con */
+.clear{
+    clear: both;
+}
+
+/*   */
+html{
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior: smooth;
+}
+.col-half{
+    width: 50%;
+   
+}
+.col{
+    margin: 0 98.909px;
+    padding: 64px 16px;
+}
+.boder{
+    border:1px solid #CCC !important;
+}
+.input{
+    padding: 8px;
+}
+
+#header{
+    height: 46.5px;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+
+}
+
+/* start:nav */
+#header>.nav>li{
+    display: inline-block;
+    
+    line-height: 46.5px;
+}
+
+.nav>li>a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding:0px 24px;
+}
+
+#header .nav li{
+    list-style-type: none;
+}
+
+.nav>li:hover>a{
+    background-color: #ccc;
+    color: black;
+} 
+
+.nav>li>.subnav>li:hover>a{
+    background-color: #ccc;
+    color: black;
+}
+
+#header .nav{
+    display: inline-block;
+}
+
+.nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*bóng đổ */
+}
+/* ghi dè lên .nav .subnav => display none -->block */
+.nav li:hover .subnav{
+    display: block;
+}
+
+.nav .subnav a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding:0px 40px 0px 10px ;
+    min-width: 120px;
+}
+.nav .icon1{
+    font-size: 14px;
+}
+#header .search-btn {
+    float: right;
+    line-height: 46.5px;
+    
+    padding:0px 20px;
+    
+}
+/* end:nav */
+
+
+
+/* start:button-search */
+#header .search-btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#header .search-btn .icon2 {
+    color: #fff;
+    font-size: 18px;
+}
+/* end:button-search */
+
+
+
+#slyder{
+    margin-top: 46px;
+    height: 374.4px;
+    padding-top: 50%;
+    background-image: url(/HTML_CODE/w3_band/assets/slider/slider1.jpg);
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+#slyder .content{
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    left: 50%;
+    transform: translatex(-50%);
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    
+}
+
+#slyder .text-heading{
+   margin: 10px;
+   text-align: center;
+
+}
+
+
+
+
+#content{
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    /* khi kết hợp float: right thì k bị tình trạng chèn lên */
+}
+.selection-header{
+    text-align: center;
+    color: black;
+    letter-spacing: 5px;
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: 500;
+    /* font-weight làm mỏng chữ đi */
+   
+}
+.selection-slg{
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    text-align: center;
+    margin: 15px 0px;
+}
+#slyder .content-about{
+    margin: 15px 0px;
+    
+}
+
+
+#infor{
+    padding: 32px 0px;
+}
+
+#content .content-about{
+    line-height: 1.5;
+}
+
+#infor .content-ifor{
+    float: left;
+    width: 33.33333%;
+   text-align: center;
+}
+.content-ifor .name{
+    
+    margin: 15px 0px;
+}
+#content img{
+    width: 153.59px;
+    border-radius: 5%;
+    margin-bottom: 15px;
+   
+}
+#main-TOUR{
+    
+    background-color: #000;
+    height: 845.5px;
+    
+    
+}
+#TOUR{
+    margin:0px 223.2px;
+    padding: 64px 16px;
+}
+#TOUR>.selection-slg,#TOUR>.selection-header{
+    color: #ffffff;
+}
+/* start ticket */
+.ticket{
+    background-color: #fff;
+    color: #75757575;
+    margin-top: 46px;
+    list-style: none;
+}
+.ticket li{
+    border-bottom:2px solid  ;
+    padding: 8px 16px;
+    height: 37px;
+    
+}
+.ticket .soldout{
+    color: #ffffff;
+    background-color: #f44336;
+    margin-left: 16px;   
+    padding: 0px 8px;
+    font: 15px; 
+}
+.ticket .have-tickets{
+    float:right;
+    width: 24.7px;
+    height: 22.5px;
+    background-color: #000;
+    margin-right:16px ;
+    padding: 0px 8px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    margin-top: -2px;
+    text-align: center;
+    padding-top: 1.7px;
+    
+}
+/* start buy_tickets */
+#buy_ticket{
+    margin: 0px 223.2px;
+    position: relative;
+    
+}
+
+.picture_infor1,.picture_infor2,.picture_infor3{
+    float: left;
+    background-color: #FFFFFF;
+    width: 245.33px;
+    margin-right: 20px;
+
+}
+.picture_infor3{
+    float: right;
+}
+.picture_infor2{
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+#buy_ticket img{
+    display: block;
+    width: 100%;
+    
+
+}
+#buy_ticket button{
+    background-color: #000;
+    color: #FFFFFF;
+    border-style: none;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    
+}
+#buy_ticket button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+#buy_ticket .content_ticket{
+    padding: 0.15px 16px;
+}
+#buy_ticket p{
+    margin: 15px;
+}
+#buy_ticket .contend_buy_ticket
+{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+    
+}
+#buy_ticket .time_buy_ticket{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+#buy_ticket .header_buy_ticket{
+   font-weight: 700;
+}
+
+#menu_buy_ticket{
+    position: fixed;
+   background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 1.5px;
+    top: 46.5px;
+    display:none;
+}
+#menu_buy_ticket.open{
+    display: flex;
+}
+
+#menu_buy_ticket .contener{
+    width: 900px;
+    min-height: 342.5px;
+    background-color: #FFFFFF;
+    max-width: calc(100%-32px);
+    
+}
+#menu_buy_ticket header{
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 32px 16px;
+    font-size: 30px;
+}
+#menu_buy_ticket .icon{
+    margin-right: 10px;
+}
+
+
+#menu_buy_ticket .close{
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    top: 0;
+}
+#menu_buy_ticket .close:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#menu_buy_ticket .body_label{
+    display: block;
+    font-size: 15px;
+    margin: 18px 0px;
+}
+#menu_buy_ticket .body_input{
+    width: 100%;
+    border: 1px solid #CCC;
+    margin-bottom: 5px;
+    padding: 10px 8px;
+}
+#menu_buy_ticket .body_menu{
+    padding: 0.15px 16px;
+}
+#menu_buy_ticket button {
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #009688;
+    margin: 16px 0;
+    padding: 16px 0px;
+    border: 0;
+}
+#menu_buy_ticket button:hover{
+    background-color: #CCC;
+    color: #000;
+}
+#menu_buy_ticket .body_foot{
+    float: right;
+    margin: 15px 0px;
+}
+#menu_buy_ticket .body_foot a{
+    color: #2196f3;
+}
+
+
+/* start content */
+#contact::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#contact-main .input_infor{
+  float: right;
+}
+#contact-main .contact{
+    display: inline-block;
+}
+.input_infor .name{
+    display: inline-block;
+}
+.input_infor .contact-input-email{
+    float: right;
+}
+.input_infor .contact-input-Message input{
+    width: 100%;
+}
+.input_infor::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.input_infor .submid-button{
+    float: right;
+}
+
+
+/* start map */
+#map{
+    width: 100%;
+   
+}
+#map img{
+    display: block;
+}
+footer{
+    padding: 64px 16px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+   
+}
+footer a{
+    
+    color: rgba(0, 0, 0, 0.5);
+}
+footer .icon-footer{
+    padding: 3px;
+}
+footer p{
+    margin: 15px 0px;
+}
+footer a{
+    text-decoration: none;
+}
